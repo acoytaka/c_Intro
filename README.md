@@ -18,3 +18,7 @@ C言語で三目並べ（マルバツゲーム）を作成してもらいます�
    1. [Macの方法](c_setting/mac.md)
 1. C言語入門
    1. [C言語に慣れる](/2_1/c_pro01.md)
+
+## 音響工学プロジェクト連絡先
+
+[twitter](https://twitter.com/niigata_onkyo)
