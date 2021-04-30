@@ -29,7 +29,7 @@ gcc hello.c
 a.exe
 ```
 
-と入力し実行してみてください（Macの場合は）．
+と入力し実行してみてください（Macの場合は`./a.out`）．
 
 ```shell
 Hello World!
