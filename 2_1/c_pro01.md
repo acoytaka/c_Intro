@@ -11,8 +11,6 @@ Hello Worldを表示してプログラムの世界に飛び込んでみましょ
 
 int main(void)
 {
-    printf("hello world!");
-
-    return 0;
+    printf("hello world!\n");
 }
 ```

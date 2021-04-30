@@ -13,5 +13,7 @@ C言語で三目並べ（マルバツゲーム）を作成してもらいます�
 ## 目次
 
 1. C言語の開発環境構築
+   1. [Windowsの方法](c_setting/windows.md)
+   1. [Macの方法](c_setting/mac.md)
 1. C言語入門
    1. [C言語に慣れる](/2_1/c_pro01.md)
