@@ -19,6 +19,11 @@ C言語で三目並べ（マルバツゲーム）を作成してもらいます�
 1. C言語入門
    1. [C言語に慣れる](/2_1/c_pro01.md)
 
+## おすすめの参考書，参考サイト
+
+* [新・明解C言語 入門編 (明解シリーズ)   柴田 望洋](https://www.amazon.co.jp/dp/479737702X/ref=cm_sw_r_tw_dp_TGSERK5TFNCC2Z9XE9AD)
+* [苦しんで覚えるＣ言語](https://9cguide.appspot.com/)
+
 ## 音響工学プロジェクト連絡先
 
 [twitter](https://twitter.com/niigata_onkyo)
