@@ -49,7 +49,9 @@ int main(void)
 
 ### `int`型の小数点の扱い
 
-下の[division_int.c](division_int.c)を実行して![\begin{equation}\frac{4}{3}\end{equation]のように
+下の[division_int.c](division_int.c)を実行して4/3のように計算してみてください．
+
+本来なら小数点が出るはずですが`int`型は整数しか扱うことができないので小数点は切り捨てされています．
 
 ```c
 # include <stdio.h>
