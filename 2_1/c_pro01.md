@@ -43,7 +43,7 @@ gcc hello.c
 エラーが出なかった場合は
 
 ```shell
-a.exe
+./a.exe
 ```
 
 と入力し実行してみてください（Macの場合は`./a.out`）．
