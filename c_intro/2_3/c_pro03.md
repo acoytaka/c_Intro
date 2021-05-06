@@ -24,10 +24,10 @@
 
 数学と同じように`()`を付けることで特定の演算を優先的に計算することもできます．
 
-各々の演算子の使用方法は下の[arithmetic_operations_int.c](arithmetic_operations.c)のように使用します．
+各々の演算子の使用方法は下の[arithmetic_operations_int.c](arithmetic_operations_int.c)のように使用します．
 
 ```c
-# include <stdio.h>
+#include <stdio.h>
 
 int main(void)
 {
@@ -47,6 +47,21 @@ int main(void)
 }
 ```
 
+実際実行してみると
+
+```shell
+2つの整数を入力してください．
+x：10
+y：3
+x + y = 13
+x - y = 7
+x * y = 30
+x / y = 3
+x % y = 1
+```
+
+となる．
+
 ### `int`型の小数点の扱い
 
 下の[division_int.c](division_int.c)を実行して4/3のように計算してみてください．
@@ -54,7 +69,7 @@ int main(void)
 本来なら小数点が出るはずですが`int`型は整数しか扱うことができないので小数点は切り捨てされています．
 
 ```c
-# include <stdio.h>
+#include <stdio.h>
 
 int main(void)
 {
@@ -71,7 +86,33 @@ int main(void)
 }
 ```
 
+### 符号を反転させる
+
+下のプログラムは入力した値の符号を反転させて表示します．
+
+```c
+#include <stdio.h>
+
+int main(void)
+{
+    int n;
+
+    printf("整数を入力してください：");
+    scanf("%d",&n);
+
+    printf("符号を反転すると%d\n",-n);  //変数にマイナスを付けることで符号が反転する．
+    
+    return 0;
+}
+```
+
+このように変数1つにつけて計算するときの演算子を単項演算子とよぶ．
+
 ## 型
+
+これまでは整数だけを使用できる`int`型を使用してきました．`int`型では小数点数を表示したり利用することができません．
+
+利用するためには下表にある`float`型や`double`型を利用するのが一般的です．
 
 | 型 | キーワード | 使用ビット数 |
 | :- | :- | :- |
@@ -80,6 +121,93 @@ int main(void)
 | 浮動小数点数 | float | 32ビット |
 | 倍精度浮動小数点数 | double | 64ビット |
 | 値なし | void | なし |
+
+ここで先程の演算変数の宣言を`float`型に変更した[arithmetic_operations_float.c](arithmetic_operations_float.c)を用意した．余りを求めている行がなくなっているが，これは少数点数では余りを求めることはできないためです．
+
+```c
+# include <stdio.h>
+
+int main(void)
+{
+    float x, y;   //float型の変数の宣言
+
+    puts("2つの数を入力してください．");
+    printf("x：");  scanf("%f", &x);
+    printf("y：");  scanf("%f", &y);
+
+    printf("x + y = %f\n", x + y);  //和
+    printf("x - y = %f\n", x - y);  //差
+    printf("x * y = %f\n", x * y);  //積
+    printf("x / y = %f\n", x / y);  //商 xをyで割った商
+    //余りは少数点数では求められないためなし
+
+    return 0;
+}
+```
+
+実際実行してみると
+
+```shell
+2つの数を入力してください．
+x：10
+y：3
+x + y = 13.000000
+x - y = 7.000000
+x * y = 30.000000
+x / y = 3.333333
+```
+
+このようになり小数点以下6桁まで計算されていることがわかる．
+
+### それぞれの型の使い分け
+
+上では`float`型を実行してもらったがプログラムを見てみると宣言が`float`になっていたり，`%d`だったところが`%f`になっていることがわかる．
+
+その他の型もそれぞれ違いがあるのでここで取り上げる．
+
+* 宣言の方法
+  
+```c
+int a;
+float b;
+double c;
+```
+
+* `scanf`での使い方
+
+```c
+scanf("%d",&a);     //int型
+scanf("%f",&b);     //float型
+scanf("%lf",&c);    //double型
+```
+
+* `printf`での使い方
+
+```c
+printf("int型 %d\n",a);
+printf("float型 %f\n",b);
+printf("double型 %lf\n",c);
+```
+
+### 表示する数の長さ
+
+表示する際少数点以下6桁も必要ない，2桁で十分だというときがある．そのような場合は下のようにすることで小数点以下の表示を調節することができる．
+
+```c
+#include <stdio.h>
+
+int main(void)
+{
+    printf("%f\n"123.456);      //デフォルト表示
+    printf("%.1f\n"123.456);    //小数点以下1桁表示
+    printf("%.2f\n"123.456);    //小数点以下2桁表示
+    
+    printf("%1f\n"123.456);     //整数1桁表示
+    printf("%1.1f\n"123.456);   //整数1桁表示，小数点以下1桁表示
+
+    return 0;
+}
+```
 
 ## 練習問題
 
