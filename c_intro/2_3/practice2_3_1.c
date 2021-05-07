@@ -12,7 +12,7 @@ int main(void)
     printf("x * y = %d\n",n * m);
     printf("x / y = %d\n",n / m);
     printf("x %% y = %d\n",n % m);
-    printf("平均値 = %f\n",(double)(n + m) / 2);
+    printf("平均値 = %f\n",(float)(n + m) / 2);
 
     return 0;
 }
