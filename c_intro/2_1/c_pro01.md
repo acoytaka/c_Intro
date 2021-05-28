@@ -195,7 +195,7 @@ int main(void)
 
 int main(void)
 {
-    puts("hello")   //最後に自動で改行される．
+    puts("hello");   //最後に自動で改行される．
     printf("hello); //改行されない．
 
     return 0;
