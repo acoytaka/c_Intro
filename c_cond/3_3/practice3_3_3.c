@@ -1,4 +1,4 @@
-/* oxを交互に出力*/
+/* xoを交互に出力*/
 # include <stdio.h>
 int main(void)
 {
@@ -15,11 +15,11 @@ int main(void)
         {
             if (i % 2)  
             {
-                printf("o");
+                printf("x");
             }
             else
             {
-                printf("x");
+                printf("o");
             }
             i++;
         }
