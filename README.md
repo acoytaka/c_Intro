@@ -24,8 +24,9 @@ C言語で三目並べ（マルバツゲーム）を作成してもらいます�
    1. [if文](c_cond/3_1/c_pro04.md)
    1. [for文](c_cond/3_2/c_pro05.md)
    1. [while文](c_cond/3_3/c_pro06.md)
-   1. [do文](c_cond/3_4/c_pro07.md)
-   1. [swich文](c_cond/3_5/c_pro08.md)
+
+1. 配列
+   1. [配列]()
 
 ## おすすめの参考書，参考サイト
 
