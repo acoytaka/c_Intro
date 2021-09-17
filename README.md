@@ -28,6 +28,10 @@ C言語で三目並べ（マルバツゲーム）を作成してもらいます�
 1. 配列
    1. [配列](c_array/4_1/array.md)
 
+1. ソフトウェア班配属の人
+   1. [Switch文](c_soft/c_swich.md)
+   1. [ポインタ](c_soft/c_pointer.md)
+
 ## おすすめの参考書，参考サイト
 
 * [新・明解C言語 入門編 (明解シリーズ)   柴田 望洋](https://www.amazon.co.jp/dp/479737702X/ref=cm_sw_r_tw_dp_TGSERK5TFNCC2Z9XE9AD)
