@@ -250,7 +250,4 @@ int main(void)
 一番小さい値は5です．
 ```
 
-課題通りの実行をすることができたら下記フォームに提出してください．
-提出する際は大学のアカウントでログインしてください．
-
-[https://forms.gle/Jcykh6nnvFkswGUT8](https://forms.gle/Jcykh6nnvFkswGUT8)
+堀のslackのDMに投げてください。 見たら何かしか返信します。(見るの遅くなったらごめんなさい)
