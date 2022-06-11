@@ -290,6 +290,6 @@ x / y = 1.600
 完成したら担当の先輩に.Cファイルを提出してください.
 
 ## 追加課題
-[プログラミング練習型.pdf](https://github.com/HoriKeita/c_Intro/files/8883589/default.pdf)
+[プログラミング練習型.pdf](プログラミング練習型.pdf)
 
 
