@@ -50,6 +50,7 @@ xoxo
 完成したら.Cファイルを担当の先輩に提出してください.
 
 ## 追加課題
-[`newton.md`](newton.md)
+* その１[`プログラミング練習while文.pdf`](プログラミング練習while文.pdf)
+* その２[`newton.md`](newton.md)
 
 * 提出は不要です.
